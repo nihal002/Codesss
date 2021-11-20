@@ -1,0 +1,42 @@
+<!-- call register function and pass value of form with id student register -->
+<form #studentRegister="ngForm" (ngSubmit)="register(studentRegister.value)">
+
+    <label>Name:-</label>
+
+    <input class="form-control" type="text" pattern="[a-zA-Z]+$" required #name="ngModel" name="name" ngModel placeholder="Enter your name" />
+
+    <br/>
+
+    <label>Email:-</label>
+
+    <input class="form-control" type="email" pattern="[a-zA-Z]+$" required #name="ngModel" name="email" ngModel placeholder="Enter your Email" />
+
+    <br/>
+
+    <label>Phone Number:-</label>
+
+    <input class="form-control" type="number"  required #name="ngModel" name="phone" ngModel placeholder="Enter your Phone Number" />
+
+    <br/>
+
+    <label>College Name:-</label>
+
+    <input class="form-control" type="text" pattern="[a-zA-Z]+$" required #name="ngModel" name="college" ngModel placeholder="Enter your College name" />
+
+    <br/>
+
+    <label>Branch:-</label>
+
+    <input class="form-control" type="text" pattern="[a-zA-Z]+$" required #name="ngModel" name="branch" ngModel placeholder="Enter your branch" />
+
+    <br/>
+
+    <label>Year:-</label>
+
+    <input class="form-control" type="number" required #name="ngModel" name="year" ngModel placeholder="Enter your Year" />
+
+    <br/>
+
+    <button class="btn btn-primary">Register</button>
+
+</form>

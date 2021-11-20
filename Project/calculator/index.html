@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Bill Calculator</title>
+        <script>
+            function calculateTotalPrice(){
+                return false;
+            }
+        </script>
+    </head>    
+
+<!-- Write appropriate and complete  HTML  CODE with proper syntax HERE. Also write approriate code to link billcalc.css file from this file.-->
+    <body>
+        <h1>Bill Calculator</h1>
+        <table>
+            <tr>
+                <td>
+                    <label for="Product Name" >Product Name</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Product Name" id="productName" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <label for="Price" >Product Price in Rs.</label>
+                </td>
+                <td>
+                    <input type="number" placeholder="Product Price" id="price" name="pkk" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Quantity" >Quantity</label> 
+                </td>
+                <td>
+                    <input type="number" placeholder="Enter quantity" id="qty" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Total Price" >Total Price in Rs.</label>        
+                </td>
+                <td>
+                    <output name="result" id="myres">
+
+                    </output>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- <input type="submit" value="Submit" id="submit"> -->
+                    <button type="submit" onclick="total()">submit</button>
+                </td>
+            </tr>
+        </table>
+    </body>
+    <script>
+        function total()
+        {
+            var rs = document.getElementById("price").value;
+            console.log(rs);
+            var qt = document.getElementById("qty").value;
+            console.log(qt);
+            var tl = rs*qt;
+            console.log(tl);
+
+            var li = document.createElement("li");
+            // var inputValue = document.getElementById("myInput").value;
+            // var mylist = [];
+            // mylist.push(inputValue);
+            var t = document.createTextNode(tl);
+            li.appendChild(t);
+
+            document.getElementById("myres").appendChild(tl);
+        }
+    </script>
+</html>

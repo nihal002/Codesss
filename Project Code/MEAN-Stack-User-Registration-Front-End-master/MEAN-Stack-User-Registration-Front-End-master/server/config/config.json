@@ -1,0 +1,10 @@
+{
+    "development": {
+        "PORT": 3000,
+        "MONGODB_URI": "mongodb+srv://testing:test123@cluster0.psut4.mongodb.net/interviewprepration?retryWrites=true&w=majority"
+    },
+    "production": {
+        "PORT": 80,
+        "MONGODB_URI": "mongodb+srv://testing:test123@cluster0.psut4.mongodb.net/interviewprepration?retryWrites=true&w=majority"
+    }
+}

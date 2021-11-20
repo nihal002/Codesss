@@ -1,0 +1,22 @@
+form{
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 60%;
+    box-shadow: 5px 5px 5px 5px rgb(53, 44, 44);
+}
+label{
+    margin-left: 5%;
+    color: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+input{
+    margin-left: 5%;
+    width: 90%;
+    box-shadow: 2px 2px 2px 2px rgb(134, 230, 236);
+}
+button
+{
+    background-color: black;
+    color: white;
+    margin-left: 40%;
+}

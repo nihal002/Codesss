@@ -1,0 +1,13 @@
+.nav{
+    background-color: rgb(117, 112, 112);
+}
+.nn{
+    box-shadow: 5px 5px 5px 5px rgb(53, 44, 44);
+}
+.btn{
+    border-color: white;
+}
+.btn:hover{
+    background-color: black;
+    color: rgb(247, 240, 240);
+}
